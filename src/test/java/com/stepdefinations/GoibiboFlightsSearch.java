@@ -28,7 +28,7 @@ public class GoibiboFlightsSearch extends BaseClass {
 	public void i_navigated_to_goibibo_application() throws Exception {
 		try {
 			configFileReader.loadPropertyFile("config.properties");
-			driver = launchBrowser(configFileReader.getProperty("url"));
+			driver = launchBrowser("chrome", configFileReader.getProperty("url"));
 			Reporter.addStepLog("Opened url is : " + configFileReader.getProperty("url"));
 			logger.info("Opened url is : " + configFileReader.getProperty("url"));
 			boolean verifygoibibohomepage = goibiboSearchPage.verifyGoibiboAppOpened(driver);

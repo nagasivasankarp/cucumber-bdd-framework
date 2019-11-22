@@ -14,6 +14,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.cucumber.listener.Reporter;
@@ -34,18 +38,40 @@ public class BaseClass {
 	/**
 	 * Method for Driver(Browser) Instance and Launch Url in Browser
 	 * 
+	 * @param browserName
 	 * @param url
 	 * @return
 	 * @throws Exception
 	 */
-	public WebDriver launchBrowser(String url) throws Exception {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
+	@SuppressWarnings("deprecation")
+	public WebDriver launchBrowser(String browserName, String url) throws Exception {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+			System.out.println("FireFox Browser is Launched");
+		} else if (browserName.equalsIgnoreCase("safari")) {
+			// Note Should AllowRemoteAutomation in safari browser DeveloperMenu
+			// Directions -- > launchSafariBrowser --> Preferences --> Advanced Tab -->
+			// Show Developer Menu --> Click on DevloperMenu --> Enable
+			// AllowRemoteAutomation
+			driver = new SafariDriver();
+			System.out.println("Safari Browser is Launched");
+		} else if (browserName.equalsIgnoreCase("ie")) {
+			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			WebDriverManager.iedriver().setup();
+			driver = new InternetExplorerDriver(capabilities);
+			System.out.println("IE Browser is Launched");
+		}
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get(url);
 		return driver;
 	}
+
 
 	/**
 	 * Method for Explicit wait(120 seconds)
