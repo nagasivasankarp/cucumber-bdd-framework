@@ -5,15 +5,21 @@ Framework Description
 The framework which I followed is 'BDD CUCUMBER. Below is the brief description on how this framework works: 
 
 ➢ each page is defined as its own class. 
+
 ➢ Actions are represented as functions for a class. 
+
 ➢ Tests only talk to the features files 
+
 ➢ Class Inheritance can be used to define functionality to a set of pages.  
  
 Prerequisites  
 
 -> Java should be installed and path should be in environment variables. 
+
 -> Maven should be installed path should be in environment variables. 
+
 -> Cucumber Plug-in Should be Installed in IDE (in Eclipse, we can install using Eclipse Marketplace) .  
+
 -> Import the framework to available IDE (Eclipse is suggestible).  
 
 Update your jdk/jre to the project by follow below steps. 
