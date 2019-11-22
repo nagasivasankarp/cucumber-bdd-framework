@@ -23,14 +23,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 	public WebDriver driver;
 	public static String projectPath = System.getProperty("user.dir");
-	public String reportFilePath;
 	public Date date;
 	static Date dte = new Date();
 	static String dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss").format(dte);
 	static String reportFileName = "Testing_" + dateFormat;
-	public static String screenShotFilePath = projectPath + "/ScreenShots/";
+	private static String screenShotFilePath = projectPath + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "screenshots";
 	public String reportsPath = projectPath + File.separator + "Reports";
-	public String reportConfigPath;
+	private String reportConfigPath;
 
 	/**
 	 * Method for Driver(Browser) Instance and Launch Url in Browser
@@ -97,7 +96,7 @@ public class BaseClass {
 		try {
 			// This takes a screenshot from the driver at save it to the specified location
 			File sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			File destinationPath = new File(reportsPath + File.separator + screenshotName + ".png");
+			File destinationPath = new File(screenShotFilePath + File.separator + screenshotName + ".png");
 			Files.copy(sourcePath, destinationPath); // This attach the specified screenshot to the test
 			Reporter.addStepLog("Screenshot is taken : " + screenshotName + "\n" + covertScreenshotToBase64(destinationPath));
 		} catch (IOException e) {
