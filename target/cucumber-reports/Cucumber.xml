@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="42.977581">
+<testcase classname="Goibibo Flight Search" name="Goibibo Flight Search" time="42.977581">
+<system-out><![CDATA[Given I navigated to goibibo application....................................passed
+When I searched for flights between bangalore and mumbai....................passed
+Then I should see the prices list of fights.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
