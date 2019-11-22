@@ -1,5 +1,0 @@
-com\testrunner\GoibiboFlightSearchTest.class
-com\helperclasses\BaseClass.class
-com\helperclasses\ConfigFile.class
-com\stepdefinations\GoibiboFlightsSearch.class
-com\pageobjects\GoibiboFlightsSearchPage.class

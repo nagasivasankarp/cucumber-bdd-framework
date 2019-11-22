@@ -33,8 +33,8 @@ public class BaseClass {
 	public String reportConfigPath;
 
 	/**
-	 * 
 	 * Method for Driver(Browser) Instance and Launch Url in Browser
+	 * 
 	 * @param url
 	 * @return
 	 * @throws Exception
@@ -48,13 +48,23 @@ public class BaseClass {
 		return driver;
 	}
 
-	/*Explicit wait(120 seconds)*/
+	/**
+	 * Method for Explicit wait(120 seconds)
+	 * 
+	 * @param driver
+	 * @param locator
+	 * @return
+	 */
 	public WebElement waitForExpectedElement(WebDriver driver, final By locator) {
 		WebDriverWait wait = new WebDriverWait(driver, 120);
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 
-	/*extent-config.xml file path*/
+	/**
+	 * extent-config.xml file path
+	 * 
+	 * @return
+	 */
 	public String getReportConfigPath() {
 		reportConfigPath = System.getProperty("user.dir") + File.separator + "extent-config.xml";
 		if (reportConfigPath != null) {
@@ -65,12 +75,22 @@ public class BaseClass {
 		}
 	}
 	
-	/*Driver(Browser) Instance Close*/
+	/**
+	 * Driver(Browser) Instance Close
+	 * 
+	 * @param driver
+	 */
 	public void tearDown(WebDriver driver) {
 		driver.quit();
 	}
 
-	/*Add Screenshot to Report file*/
+	/**
+	 * Add Screenshot to Report file
+	 * 
+	 * @param driver
+	 * @param screenshotName
+	 * @throws Exception
+	 */
 	@SuppressWarnings("unused")
 	public void report(WebDriver driver, String screenshotName) throws Exception {
 		String html = "";
@@ -84,6 +104,12 @@ public class BaseClass {
 		}
 	}
 
+	/**
+	 * ConvertImage to Base64 format
+	 * 
+	 * @param file
+	 * @return
+	 */
 	@SuppressWarnings("resource")
 	public static String covertScreenshotToBase64(File file) {
 		try {
@@ -98,12 +124,26 @@ public class BaseClass {
 		return null;
 	}
 
+	
+	/**
+	 * To click on image in report file
+	 * 
+	 * @param img
+	 * @param screenName
+	 * @return
+	 */
 	public static String doImageClickAnimation(String img, String screenName) {
 		String image = "<img onclick='clickImage(this)' src=\"data:image/png;base64, " + img + "\" alt=\"" + screenName
 				+ "\" width=\"710\" height=\"450\"/>";
 		return image;
 	}
 
+	/**
+	 * Create Directory
+	 * 
+	 * @param directory
+	 * @return
+	 */
 	public static boolean createDirectory(String directory) {
 		File fileDirectory = new File(directory);
 		if (!fileDirectory.exists()) {
@@ -113,8 +153,13 @@ public class BaseClass {
 		return false;
 	}
 
+	/**
+	 * Add Screenshot
+	 * 
+	 * @param file
+	 * @return
+	 */
 	public String addScreenshot(File file) {
-		// File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String encodedBase64 = null;
 		FileInputStream fileInputStreamReader = null;
 		try {

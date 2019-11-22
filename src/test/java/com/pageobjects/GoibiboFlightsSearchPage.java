@@ -10,7 +10,11 @@ import org.openqa.selenium.WebElement;
 import com.helperclasses.BaseClass;
 
 public class GoibiboFlightsSearchPage extends BaseClass {
-	/* Page Objects Locators*/
+	
+	/**
+	 * Elements locators
+	 * 
+	 */
 	private static final By ONE_WAY_TRIP_BTN = By.xpath("//span[contains(text(),'One way')]");
 	private static final By FROM_FLD = By.id("gosuggest_inputSrc");
 	private static final By DESTINATION_FLD = By.id("gosuggest_inputDest");
@@ -20,13 +24,23 @@ public class GoibiboFlightsSearchPage extends BaseClass {
 	private static final By SEARCH_BTN = By.id("gi_search_btn");
 	private static final By PRICE_LIST = By.xpath("//span[@class='ico22 fr fb']");
 
-	/* Constructor */
+	/**
+	 * Constructor
+	 * 
+	 * @param driver
+	 */
 	public void clkOneWayTripBtn(WebDriver driver) {
 		waitForExpectedElement(driver, ONE_WAY_TRIP_BTN);
 		driver.findElement(ONE_WAY_TRIP_BTN).click();
 	}
 
-	/* Method for Fill From field */
+	/**
+	 * Method for Fill From field
+	 * 
+	 * @param driver
+	 * @param fromFldValue
+	 * @throws Exception
+	 */
 	public void fillFromFld(WebDriver driver, String fromFldValue) throws Exception {
 		waitForExpectedElement(driver, FROM_FLD);
 		driver.findElement(FROM_FLD).sendKeys(fromFldValue);
@@ -35,7 +49,13 @@ public class GoibiboFlightsSearchPage extends BaseClass {
 		driver.findElement(FROM_FLD).sendKeys(Keys.ENTER);
 	}
 
-	/* Method for Fill Destination Field */
+	/**
+	 * Method for Fill Destination Field
+	 * 
+	 * @param driver
+	 * @param destinationFldValue
+	 * @throws Exception
+	 */
 	public void fillDestinationFld(WebDriver driver, String destinationFldValue) throws Exception {
 		waitForExpectedElement(driver, DESTINATION_FLD);
 		driver.findElement(DESTINATION_FLD).sendKeys(destinationFldValue);
@@ -44,30 +64,53 @@ public class GoibiboFlightsSearchPage extends BaseClass {
 		driver.findElement(DESTINATION_FLD).sendKeys(Keys.ENTER);
 	}
 
-	/* Method for Click on Date Field */
+	/**
+	 * Method for Click on Date Field
+	 * 
+	 * @param driver
+	 */
 	public void clkDepartureDateFld(WebDriver driver) {
 		waitForExpectedElement(driver, DEPARTURE_DATE_FLD);
 		driver.findElement(DEPARTURE_DATE_FLD).click();
 	}
 
-	/* Click on Next Month Button in Calendar */
+	/**
+	 * Click on Next Month Button in Calendar
+	 * 
+	 * @param driver
+	 */
 	public void clkDateNextBtn(WebDriver driver) {
 		waitForExpectedElement(driver, DATE_NXT_BTN);
 		driver.findElement(DATE_NXT_BTN).click();
 	}
 
-	/* Method to Select the date */
+	/**
+	 * Method to Select the date
+	 * 
+	 * @param driver
+	 */
 	public void clkDateLink(WebDriver driver) {
 		waitForExpectedElement(driver, DATE_PICKER_DAY);
 		driver.findElement(DATE_PICKER_DAY).click();
 	}
 
+	/**
+	 * Method for click on Search Button
+	 * 
+	 * @param driver
+	 */
 	public void clkSearchBtn(WebDriver driver) {
 		waitForExpectedElement(driver, SEARCH_BTN);
 		driver.findElement(SEARCH_BTN).click();
 	}
 
-	/* Method to verify Prices Order */
+	/**
+	 * Method to verify Prices Order
+	 * 
+	 * @param driver
+	 * @return
+	 * @throws Exception
+	 */
 	public boolean verifyPricesOrder(WebDriver driver) throws Exception {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		for (int second = 0;; second++) {
@@ -98,7 +141,12 @@ public class GoibiboFlightsSearchPage extends BaseClass {
 		return resultPricesDecreasingOrder;
 	}
 
-	/* Method to verify Home page */
+	/**
+	 * Method to verify Home page
+	 * 
+	 * @param driver
+	 * @return
+	 */
 	public boolean verifyGoibiboAppOpened(WebDriver driver) {
 		boolean verifyOneWayButton = driver.findElement(ONE_WAY_TRIP_BTN).isDisplayed();
 		if (verifyOneWayButton == true) {
