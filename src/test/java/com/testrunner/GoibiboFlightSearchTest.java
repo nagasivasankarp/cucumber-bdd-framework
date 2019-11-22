@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "features", glue = "com.stepdefinations", plugin = {
+@CucumberOptions(features = "src/test/resources/features/", glue = "com.stepdefinations", plugin = {
 		"junit:target/cucumber-reports/Cucumber.xml", "json:target/cucumber-reports/Cucumber.json",
 		"com.cucumber.listener.ExtentCucumberFormatter:Reports/Report.html" })
 

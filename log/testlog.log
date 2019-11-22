@@ -1,80 +1,22 @@
-2019-07-27 15:38:05,688 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-07-27 15:38:05,818 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-07-27 15:38:07,309 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-07-27 15:38:08,652 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-07-27 15:38:09,921 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-07-27 15:38:10,046 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-07-27 15:38:10,171 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-07-27 15:38:10,984 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-07-27 15:38:11,256 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-07-27 15:38:17,106 - GoibiboFlightsSearch -INFO - The Results of Prices are in Improper Order
-2019-07-27 15:50:49,101 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-07-27 15:50:49,475 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-07-27 15:50:50,520 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-07-27 15:50:51,860 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-07-27 15:50:53,185 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-07-27 15:50:53,309 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-07-27 15:50:53,539 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-07-27 15:50:54,521 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-07-27 15:50:54,833 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-07-27 15:51:01,157 - GoibiboFlightsSearch -INFO - The Results of Prices are in Improper Order
-2019-09-20 11:32:32,686 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-09-20 11:32:33,203 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-09-20 11:32:35,472 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-09-20 11:32:37,217 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-09-20 11:32:38,521 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-09-20 11:32:38,654 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-09-20 11:32:38,782 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-09-20 11:32:38,935 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-09-20 11:32:39,159 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-09-20 11:32:58,460 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
-2019-09-20 11:41:56,625 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-09-20 11:41:56,765 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-09-20 11:41:57,650 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-09-20 11:41:59,014 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-09-20 11:42:00,336 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-09-20 11:42:00,494 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-09-20 11:42:00,614 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-09-20 11:42:00,777 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-09-20 11:42:01,007 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-09-20 11:42:19,785 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
-2019-09-20 12:56:22,448 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-09-20 12:56:23,585 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-09-20 12:56:24,681 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-09-20 12:56:26,009 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-09-20 12:56:27,295 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-09-20 12:56:27,440 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-09-20 12:56:27,587 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-09-20 12:56:27,721 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-09-20 12:56:27,947 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-09-20 12:56:45,459 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
-2019-09-20 14:19:36,652 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-09-20 14:19:36,720 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-09-20 14:19:37,366 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-09-20 14:19:38,674 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-09-20 14:19:39,982 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-09-20 14:19:40,108 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-09-20 14:19:40,252 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-09-20 14:19:40,412 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-09-20 14:19:40,613 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-09-20 14:19:57,764 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
-2019-11-22 08:28:02,351 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-11-22 08:28:03,736 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-11-22 08:28:07,438 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-11-22 08:28:10,422 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-11-22 08:28:12,024 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-11-22 08:28:12,207 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-11-22 08:28:12,340 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-11-22 08:28:12,485 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-11-22 08:28:12,732 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-11-22 08:28:33,156 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
-2019-11-22 08:30:00,438 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
-2019-11-22 08:30:00,554 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
-2019-11-22 08:30:01,529 - GoibiboFlightsSearch -INFO - Cliked on On-way button
-2019-11-22 08:30:02,897 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
-2019-11-22 08:30:04,228 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
-2019-11-22 08:30:04,479 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
-2019-11-22 08:30:04,618 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
-2019-11-22 08:30:04,797 - GoibiboFlightsSearch -INFO - Selected the Date
-2019-11-22 08:30:05,115 - GoibiboFlightsSearch -INFO - Clicked on Search Button
-2019-11-22 08:30:23,154 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
+2019-11-22 16:35:04,878 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
+2019-11-22 16:35:05,032 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
+2019-11-22 16:35:08,420 - GoibiboFlightsSearch -INFO - Cliked on On-way button
+2019-11-22 16:35:10,252 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
+2019-11-22 16:35:11,642 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
+2019-11-22 16:35:11,825 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
+2019-11-22 16:35:11,991 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
+2019-11-22 16:35:12,203 - GoibiboFlightsSearch -INFO - Selected the Date
+2019-11-22 16:35:12,514 - GoibiboFlightsSearch -INFO - Clicked on Search Button
+2019-11-22 16:35:31,376 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order
+2019-11-22 16:37:56,577 - GoibiboFlightsSearch -INFO - Exception is : .\configutility\config.properties (The system cannot find the path specified)
+2019-11-22 16:40:08,405 - GoibiboFlightsSearch -INFO - Exception is : .\testdata\config.properties (The system cannot find the path specified)
+2019-11-22 16:41:17,729 - GoibiboFlightsSearch -INFO - Opened url is : https://www.goibibo.com
+2019-11-22 16:41:17,813 - GoibiboFlightsSearch -INFO - Application is navigated to Goibibo home page
+2019-11-22 16:41:18,792 - GoibiboFlightsSearch -INFO - Cliked on On-way button
+2019-11-22 16:41:20,199 - GoibiboFlightsSearch -INFO - Filled From field with : Bangalore
+2019-11-22 16:41:21,508 - GoibiboFlightsSearch -INFO - Filled Destination field with : Mumbai
+2019-11-22 16:41:21,679 - GoibiboFlightsSearch -INFO - Filled Departure Date field 
+2019-11-22 16:41:21,813 - GoibiboFlightsSearch -INFO - Filled Next Month Button in Calender
+2019-11-22 16:41:21,962 - GoibiboFlightsSearch -INFO - Selected the Date
+2019-11-22 16:41:22,194 - GoibiboFlightsSearch -INFO - Clicked on Search Button
+2019-11-22 16:41:40,294 - GoibiboFlightsSearch -INFO - The Results of Prices are in Decreasing Order

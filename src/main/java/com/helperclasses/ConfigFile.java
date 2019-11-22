@@ -17,7 +17,7 @@ public class ConfigFile {
 	 * @throws Exception
 	 */
 	public void loadPropertyFile(String configFileName) throws Exception {
-		src = new File("." + File.separator + "configutility" + File.separator + configFileName);
+		src = new File("." + File.separator + "src" + File.separator + "test" + File.separator + "resources" + File.separator + "testdata" + File.separator + configFileName);
 		fis = new FileInputStream(src);
 		prop = new Properties();
 		prop.load(fis);

@@ -1,17 +1,16 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-	<groupId>cucumber-bdd-framework</groupId>
-	<artifactId>cucumber-bdd-framework</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+  <groupId>cucumber-bdd-framework</groupId>
+  <artifactId>cucumber-bdd-framework</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-	<name>cucumber-bdd-framework</name>
-	<url>http://maven.apache.org</url>
+  <name>cucumber-bdd-framework</name>
+  <url>http://maven.apache.org</url>
 
-	<properties>
+  <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -254,12 +253,11 @@
 			<version>1.0.5</version>
 			<scope>provided</scope>
 		</dependency>
-
-	</dependencies>
-	<!-- Below plug-in is used to execute tests -->
+  </dependencies>
+<!-- Below plug-in is used to execute tests -->
 	<profiles>
 		<profile>
-            <id>Cucumber</id>
+            <id>cucumber-bdd-framework</id>
             <build>
                 <plugins>
                     <plugin>
@@ -267,9 +265,9 @@
                         <artifactId>maven-source-plugin</artifactId>
                         <executions>
                             <execution>
-                                <id>Cucumber</id>
+                                <id>cucumber-bdd-framework</id>
                                 <goals>
-                                    <goal>Cucumber-0.0.1-SNAPSHOT.jar</goal>
+                                    <goal>cucumber-bdd-framework-0.0.1-SNAPSHOT.jar</goal>
                                 </goals>
                             </execution>
                         </executions>
